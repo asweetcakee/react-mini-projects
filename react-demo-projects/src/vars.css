@@ -1,0 +1,14 @@
+:root {
+  /* Colors */
+  --color-text: #78B9B5;
+  --color-primary: #0F828C;
+  --color-secondary: #065084;
+  --color-dark: #042F4D;
+  --color-active: #04AA6D;
+  --color-bg: #320A6B;
+
+  /* Fonts */
+  --font-montserrat: 'Montserrat';
+  --font-lato: 'Lato';
+  font-size: 16px;
+}
