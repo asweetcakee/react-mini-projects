@@ -1,0 +1,53 @@
+@import '../../vars.css';
+
+.card {
+  width: 21rem;
+  height: auto;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-family: var(--font-lato);
+  gap: 0.5rem;
+}
+
+.title {
+  font-size: 1.5vw;
+  font-family: var(--font-lato);
+}
+
+.description {
+  font-family: var(--font-montserrat);
+  font-size: 0.8vw;
+}
+
+.demo-wrapper {
+  border: 0.1rem solid var(--color-text);
+  border-radius: 1rem;
+}
+
+.labels {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.label {
+  padding: 0.3rem 0.8rem;
+  border-radius: 1rem;
+  font-family: var(--font-lato);
+  font-size: 0.6vw;
+  font-weight: bold;
+  background-image: var(--gradient);
+  background-size: 1000%;
+  animation: bg-animation 20s infinite alternate;
+  color: black;
+}
+
+@keyframes bg-animation {
+  0% { background-position: left; }
+  100% { background-position: right; }
+}

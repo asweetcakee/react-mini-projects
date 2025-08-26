@@ -6,9 +6,18 @@
   --color-dark: #042F4D;
   --color-active: #04AA6D;
   --color-bg: #320A6B;
+  --gradient: linear-gradient(
+    45deg,
+    #f2f3e2,
+    #b2e5f8,
+    #f4b3ef
+  );
 
   /* Fonts */
   --font-montserrat: 'Montserrat';
   --font-lato: 'Lato';
+}
+
+:root {
   font-size: 16px;
 }

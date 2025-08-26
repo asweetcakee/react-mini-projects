@@ -1,0 +1,37 @@
+@import '../../../vars.css';
+
+.page {
+  background: transparent;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.number {
+  font-size: 2vw;
+}
+
+.btns-container {
+  width: auto;
+  max-width: auto;
+  display: flex;
+  justify-content: center;
+  gap: 0.1rem;
+}
+
+.btn {
+  padding: 0.2em 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background: var(--color-secondary);
+  color: var(--color-text);
+  cursor: pointer;
+  border: none;
+}
+
+.btn:hover {
+  background: var(--color-primary);
+}

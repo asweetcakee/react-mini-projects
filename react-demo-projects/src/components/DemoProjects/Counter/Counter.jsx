@@ -1,8 +1,10 @@
 import { useRef, useState } from 'react'
-import styles from './counter.module.css';
+import fullStyles from './counter.module.css';
+import embeddedStyles from './counter.embedded.module.css'
 
-const Counter = () => {
-  
+const Counter = ({ embedded = false }) => {
+  const styles = embedded ? embeddedStyles : fullStyles
+
   const [counter, setCounter] = useState(0)
   const timerRef = useRef()
 
@@ -31,11 +33,11 @@ const Counter = () => {
     <div className={styles.page}>
       <h1 className={styles.number}>{counter}</h1>
       <div className={styles['btns-container']}>
-        <button onClick={handleIncrement} className={styles.btn}>increment</button>
-        <button onClick={handleDecrement} className={styles.btn}>decrement</button>
+        <button onClick={handleIncrement} className={styles.btn}>+</button>
+        <button onClick={handleDecrement} className={styles.btn}>-</button>
         <button onClick={handleReset} className={styles.btn}>reset</button>
-        <button onClick={handleTimerStart} className={styles.btn}>start a timer</button>
-        <button onClick={handleTimerStop} className={styles.btn}>stop a timer</button>
+        <button onClick={handleTimerStart} className={styles.btn}>start</button>
+        <button onClick={handleTimerStop} className={styles.btn}>stop</button>
       </div>
     </div>
   )
