@@ -9,8 +9,25 @@ const ProjectCard = ({ project }) => {
 
   return (
     <div className={styles.card}>
-      <h2 className={styles.title}>{project.title}</h2>
-      <p className={styles.description}>{project.description}</p>
+      <div className={styles['card-content']}>
+        <div className={styles['card-intro']}>
+          <h2 className={styles.title}>{project.title}</h2>
+          <p className={styles.description}>{project.description}</p>
+        </div>
+        {/* Labels */}
+        <div className={styles.labels}>
+          <div className={styles['labels-slide']}>
+            {project.features.map((feature, id) => (
+              <span key={id} className={styles.label}>{feature}</span>
+            ))}
+          </div>
+          <div className={styles['labels-slide']}>
+            {project.features.map((feature, id) => (
+              <span key={id} className={styles.label}>{feature}</span>
+            ))}
+          </div>
+        </div>
+      </div>
       
       {/* Inline demo project */}
       {showPreview && (
@@ -23,16 +40,13 @@ const ProjectCard = ({ project }) => {
         <button className={styles.btn} onClick={ () => setShowPreview(true) }>Preview project</button>
       )}
 
-      {project.type === projectTypes.large && (
-        <Link to={`/projects/${project.id}`}>View full project</Link>
+      {showPreview && project.type === projectTypes.medium && (
+        <button className={styles.btn} onClick={ () => setShowPreview(false) }>Hide</button>
       )}
 
-      {/* Labels */}
-      <div className={styles.labels}>
-        {project.features.map((feature, id) => (
-          <span key={id} className={styles.label}>{feature}</span>
-        ))}
-      </div>
+      {project.type === projectTypes.large && (
+        <Link className={styles.link} to={`/projects/${project.id}`}>View full project</Link>
+      )}
     </div>
   )
 }

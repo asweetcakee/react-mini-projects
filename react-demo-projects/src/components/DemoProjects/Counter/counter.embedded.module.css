@@ -3,6 +3,7 @@
 .page {
   background: transparent;
   height: auto;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,13 +11,15 @@
 }
 
 .number {
-  font-size: 2vw;
+  font-size: 2rem;
+  color: var(--color-text-1);
 }
 
 .btns-container {
   width: auto;
   max-width: auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 0.1rem;
 }
@@ -26,12 +29,13 @@
   margin-bottom: 0.5rem;
   border-radius: 0.5rem;
   font-size: 1rem;
-  background: var(--color-secondary);
-  color: var(--color-text);
+  background: var(--color-bg-1);
+  color: var(--color-text-1);
   cursor: pointer;
   border: none;
 }
 
 .btn:hover {
-  background: var(--color-primary);
+  background: var(--color-primary-3);
+  color: var(--primary-900);
 }

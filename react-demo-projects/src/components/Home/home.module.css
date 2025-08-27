@@ -1,1 +1,27 @@
 @import '../../vars.css';
+
+.page {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* REQUIRED by react-masonry-css */
+.masonryGrid {
+  display: flex;
+  margin-left: -1rem;
+  width: 100%;
+}
+
+.masonryColumn {
+  padding-left: 1rem;
+  background-clip: padding-box;
+}
+
+.masonryColumn > * {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
