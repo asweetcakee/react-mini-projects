@@ -24,6 +24,7 @@
   --color-primary-3: var(--primary-300);
   --color-dark: #042F4D;
   --color-accent: var(--accent-400);
+  --color-accent-2: hsl(53, 60%, 69%);
   --color-bg: #320A6B;
   --color-bg-1: var(--primary-900);
   --color-bg-2: var(--primary-800);

@@ -30,14 +30,16 @@ const Counter = ({ embedded = false }) => {
   }
 
   return (
-    <div className={styles.page}>
-      <h1 className={styles.number}>{counter}</h1>
-      <div className={styles['btns-container']}>
-        <button onClick={handleIncrement} className={styles.btn}>+</button>
-        <button onClick={handleDecrement} className={styles.btn}>-</button>
-        <button onClick={handleReset} className={styles.btn}>reset</button>
-        <button onClick={handleTimerStart} className={styles.btn}>start</button>
-        <button onClick={handleTimerStop} className={styles.btn}>stop</button>
+    <div className={styles.counter}>
+      <div className={styles.page}>
+        <h1 className={styles.number}>{counter}</h1>
+        <div className={styles['btns-container']}>
+          <button onClick={handleIncrement} className={styles.btn}>+</button>
+          <button onClick={handleDecrement} className={styles.btn}>-</button>
+          <button onClick={handleReset} className={styles.btn}>reset</button>
+          <button onClick={handleTimerStart} className={styles.btn}>start</button>
+          <button onClick={handleTimerStop} className={styles.btn}>stop</button>
+        </div>
       </div>
     </div>
   )

@@ -12,18 +12,20 @@ const Home = () => {
   }
 
   return (
-    <section className={styles.page}>
-      <Masonry
-        breakpointCols={breakpoints}
-        className={styles.masonryGrid}
-        columnClassName={styles.masonryColumn}
-      >
-        {projects.map(project => (
-          <div key={project.id}>
-            <ProjectCard project={project} />
-          </div>
-        ))}
-      </Masonry>
+    <section className={styles.home}>
+      <div className={styles.page}>
+        <Masonry
+          breakpointCols={breakpoints}
+          className={styles.masonryGrid}
+          columnClassName={styles.masonryColumn}
+        >
+          {projects.map(project => (
+            <div key={project.id}>
+              <ProjectCard project={project} />
+            </div>
+          ))}
+        </Masonry>
+      </div>
     </section>
   )
 }
