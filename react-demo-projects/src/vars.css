@@ -25,6 +25,7 @@
   --color-dark: #042F4D;
   --color-accent: var(--accent-400);
   --color-accent-2: hsl(53, 60%, 69%);
+  --color-accent-3: hsl(0, 59%, 69%);
   --color-bg: #320A6B;
   --color-bg-1: var(--primary-900);
   --color-bg-2: var(--primary-800);

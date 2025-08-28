@@ -34,9 +34,11 @@
   font-size: 1.2rem;
   font-family: var(--font-lato);
   color: var(--color-text-1);
+  padding: 0 0.5rem;
 }
 
 .description {
+  width: 100%;
   margin-top: 0.8rem;
   font-family: var(--font-montserrat);
   font-size: 0.9rem;

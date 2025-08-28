@@ -1,0 +1,110 @@
+@import '../../../vars.css';
+
+body{
+  background: var(--color-bg-1);
+}
+
+.meals {
+  width: 100%;
+  height: auto;
+  padding-top: 1rem;
+  background: var(--color-bg-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.items-container {
+  max-width: 100rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card {
+  width: clamp(12rem, 10vw, 30rem);
+  background: var(--color-bg-2);
+  font-family: var(--font-montserrat);
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--color-text-1);
+  padding: 0.5rem 1.5rem 0 1.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 1rem;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card-image {
+  width: clamp(10rem, 10vw, 18rem);
+  border-radius: 1rem;
+  padding: 0 0.5rem;
+}
+
+.card-content {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  font-family: sans-serif;
+  margin-top: 1rem;
+}
+
+p {
+  font-weight: bold;
+  word-break: break-all;
+  width: clamp(10rem, 10vw, 18rem);
+  padding: 0 0.5rem 0.5rem 0.5rem;
+  font-family: var(--font-montserrat);
+}
+
+.meal {
+  color: var(--color-text-1);
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+}
+
+.meal-id {
+  color: var(--color-accent);
+  font-size: clamp(0.6rem, 2vw, 0.8rem);
+}
+
+/* REQUIRED by react-masonry-css */
+.masonryGrid {
+  display: flex;
+  margin-left: -1rem;
+  width: 100%;
+}
+
+.masonryColumn {
+  padding-left: 1rem;
+  background-clip: padding-box;
+}
+
+.masonryColumn > * {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .meals {
+    padding-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .meals {
+    padding-top: 5rem;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  .meals {
+    padding-top: 7rem;
+  }
+}
