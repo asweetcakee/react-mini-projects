@@ -1,0 +1,50 @@
+.page {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.calculator {
+  position: relative;
+  display: grid;
+}
+
+.calculator .value {
+  grid-column: span 4;
+  height: 6.25rem;
+  text-align: right;
+  border: none;
+  outline: none;
+  padding: 0.625rem;
+  font-size: 1.125rem;
+}
+
+.calculator span {
+  display: grid;
+  width: 3.75rem;
+  height: 3.75rem;
+  background: #292929;
+  place-items: center;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.calculator span:active {
+  background: rgb(255, 163, 26);
+  color: #fff;
+}
+
+.calculator span.clear,
+.calculator span.backspace,
+.calculator span.equal{
+  background: rgb(255, 163, 26);
+}
+
+.calculator span.plus {
+  grid-row: span 2;
+  height: 7.5rem;
+}
+

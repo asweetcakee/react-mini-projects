@@ -106,7 +106,7 @@
 
 .demo-wrapper {
   width: auto;
-  max-height: 300px;
+  max-height: auto;
   overflow: auto;
   border: 0.1rem solid var(--color-border-1);
   border-radius: 1rem;

@@ -1,6 +1,7 @@
 import Counter from './components/DemoProjects/Counter/Counter'
 import Todo from './components/DemoProjects/Todo/Todo'
 import Meals from './components/DemoProjects/MealsAPI/Meals'
+import Calculator from './components/DemoProjects/Calculator/Calculator'
 
 export const projectTypes = {
   small: 'small',
@@ -35,11 +36,18 @@ export const projects = [
   },
   {
     id: 'calculator',
-    title: 'Counter',
-    description: 'A simple counter app with increment/decrement/reset and timer functionality.',
-    features: ['useState', 'event handling', 'useEffect', 'useRef', 'useContext'],
-    type: projectTypes.small,
-    component: Counter,
+    title: 'Calculator',
+    description: 'A calculator app that supports basic arithmetic operations, tokenization of expressions, and evaluation using Reverse Polish Notation (RPN).',
+    features: [
+      'useState',
+      'event handling',
+      'string manipulation',
+      'tokenization',
+      'Reverse Polish Notation (RPN)',
+      'stack-based evaluation'
+    ],
+    type: projectTypes.medium,
+    component: Calculator,
   },
   {
     id: 'colort0oggler',
