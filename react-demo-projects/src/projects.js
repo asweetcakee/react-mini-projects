@@ -3,6 +3,7 @@ import Todo from './components/DemoProjects/Todo/Todo'
 import Meals from './components/DemoProjects/MealsAPI/Meals'
 import Calculator from './components/DemoProjects/Calculator/Calculator'
 import ColorToggler from './components/DemoProjects/ColorToggler/ColorToggler'
+import SearchBar from './components/DemoProjects/Search Bar/SearchBar'
 
 export const projectTypes = {
   small: 'small',
@@ -28,7 +29,7 @@ export const projects = [
     component: Todo,
   },
   {
-    id: 'mealsapi',
+    id: 'meals-api',
     title: 'Meals API',
     description: 'An app that fetches and displays meals from a public API, with a responsive grid layout.',
     features: ['useState', 'useEffect', 'axios', 'async/await', 'API integration', 'React Masonry'],
@@ -65,12 +66,12 @@ export const projects = [
     component: ColorToggler,
   },
   {
-    id: 'search0icon',
-    title: 'Counter',
-    description: 'A simple counter app with increment/decrement/reset and timer functionality.',
-    features: ['useState', 'event handling', 'useEffect', 'useRef', 'useContext'],
-    type: projectTypes.large,
-    component: Counter,
+    id: 'search-bar',
+    title: 'Search bar',
+    description: 'A search bar component with toggleable input field and background color change on focus.',
+    features: ['useState', 'event handling', 'conditional rendering','event propagation control', 'react-icons'],
+    type: projectTypes.small,
+    component: SearchBar,
   },
   {
     id: 'testimonials',

@@ -1,0 +1,25 @@
+@import '../../../vars.css';
+
+.searchbar-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.7s ease;
+}
+
+.searchbar-input {
+  width: clamp(10rem, 25vw, 40rem);
+  padding: 1rem 0.75rem;
+  background: transparent;
+  outline: none;
+  border: 0.0625rem solid var(--color-text-1);
+  color: var(--color-text-1);
+  border-radius: 0.125rem;
+  box-shadow: 0.125rem 0.125rem 0.125rem 0.0625rem var(--color-border-1);
+}
+
+.searchbar-icon {
+  font-size: clamp(1rem, 2.5vw ,4rem);
+}
