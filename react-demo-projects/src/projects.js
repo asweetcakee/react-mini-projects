@@ -2,6 +2,7 @@ import Counter from './components/DemoProjects/Counter/Counter'
 import Todo from './components/DemoProjects/Todo/Todo'
 import Meals from './components/DemoProjects/MealsAPI/Meals'
 import Calculator from './components/DemoProjects/Calculator/Calculator'
+import ColorToggler from './components/DemoProjects/ColorToggler/ColorToggler'
 
 export const projectTypes = {
   small: 'small',
@@ -50,12 +51,18 @@ export const projects = [
     component: Calculator,
   },
   {
-    id: 'colort0oggler',
-    title: 'Counter',
-    description: 'A simple counter app with increment/decrement/reset and timer functionality.',
-    features: ['useState', 'event handling', 'useEffect', 'useRef', 'useContext'],
+    id: 'color-toggler',
+    title: 'Color Toggler',
+    description: 'An interactive app that dynamically changes background, text, and button colors using pre-defined palettes.',
+    features: [
+      'useState',
+      'event handling',
+      'dynamic styling',
+      'random palette selection',
+      'theme toggling'
+    ],
     type: projectTypes.small,
-    component: Counter,
+    component: ColorToggler,
   },
   {
     id: 'search0icon',
