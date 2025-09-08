@@ -4,6 +4,7 @@ import Meals from './components/DemoProjects/MealsAPI/Meals'
 import Calculator from './components/DemoProjects/Calculator/Calculator'
 import ColorToggler from './components/DemoProjects/ColorToggler/ColorToggler'
 import SearchBar from './components/DemoProjects/Search Bar/SearchBar'
+import Testimonials from './components/DemoProjects/Testimonials/Testimonials'
 
 export const projectTypes = {
   small: 'small',
@@ -75,11 +76,17 @@ export const projects = [
   },
   {
     id: 'testimonials',
-    title: 'Counter',
-    description: 'A simple counter app with increment/decrement/reset and timer functionality.',
-    features: ['useState', 'event handling', 'useEffect', 'useRef', 'useContext'],
+    title: 'Testimonials',
+    description: 'A testimonial slider that cycles through fact entries with category-based colors and navigation controls.',
+    features: [
+      'useState',
+      'react-icons',
+      'infinite looping',
+      'category-based colors',
+      'array indexing'
+    ],
     type: projectTypes.small,
-    component: Counter,
+    component: Testimonials,
   },
   {
     id: 'accordions',
