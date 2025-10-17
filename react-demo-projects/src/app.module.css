@@ -1,6 +1,0 @@
-@import './vars.css';
-
-.app {
-  font-family: var(--font-montserrat);
-  min-height: 100vh;
-}
