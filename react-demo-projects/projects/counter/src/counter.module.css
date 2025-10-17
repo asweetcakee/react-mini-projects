@@ -1,0 +1,47 @@
+@import '../../../packages/ui-theme/vars.css';
+
+.counter {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--color-bg-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page {
+  width: 25rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-text-1);
+}
+
+.number {
+   font-size: clamp(6rem, 8vw, 10rem)
+}
+
+.btns-container {
+  width: 100%;
+  max-width: clamp(8rem, 10vw, 15rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn {
+  padding:  0.3rem 1.25rem;
+  margin-bottom: 0.3125rem;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  background: var(--color-bg-3);
+  color: var(--color-text-1);
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--color-bg-2);
+}

@@ -1,0 +1,148 @@
+@import '../../../../../packages/ui-theme/vars.css';
+
+.card {
+  width: auto;
+  height: auto;
+  max-width: 25rem;
+  min-width: 12.5rem;
+  box-sizing: border-box;
+  background: var(--color-bg-3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-family: var(--font-lato);
+  gap: 0.5rem;
+}
+
+.card-content {
+  background: var(--color-bg-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.card-intro {
+  width: auto;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-family: var(--font-lato);
+  color: var(--color-text-1);
+  padding: 0 0.5rem;
+}
+
+.description {
+  width: 100%;
+  margin-top: 0.8rem;
+  font-family: var(--font-montserrat);
+  font-size: 0.9rem;
+  color: var(--color-text-3);
+}
+
+.labels {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.5rem 0;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.labels::before, .labels::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 5rem;
+  height: 100%;
+  
+  z-index: 2;
+}
+
+.labels::before {
+  left: 0;
+  background: var(--gradient-fade-left);
+}
+
+.labels::after {
+  right: 0;
+  background: var(--gradient-fade-right);
+}
+
+.labels:hover .labels-slide {
+  animation-play-state: paused;
+}
+
+.labels-slide {
+  display: inline-block;
+  animation: 30s slide infinite linear;
+}
+
+.label {
+  margin: 0 0.3rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.5rem;
+  font-family: var(--font-lato);
+  font-size: 0.75rem;
+  font-weight: bold;
+  background-color: var(--color-bg-3);
+  color: var(--color-accent);
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.demo-wrapper {
+  width: auto;
+  max-height: auto;
+  overflow: auto;
+  border: 0.1rem solid var(--color-border-1);
+  border-radius: 1rem;
+}
+
+.btn {
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  padding: 0.25rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-family: var(--font-lato);
+  font-size: 1rem;
+  background-color: var(--color-btn-1);
+  font-weight: bold;
+  color: var(--color-primary-900);
+  cursor: pointer;
+}
+
+.link {
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  padding: 0.25rem 1rem;
+  text-decoration: none;
+  color: #000;
+  background: #f0f0f0;
+  border-radius: 0.25rem;
+  font-family: var(--font-lato);
+  font-size: 1rem;
+  background-color: var(--color-btn-2);
+  font-weight: bold;
+  color: var(--color-primary-900);
+}
+
+@media (max-width: 768px) {
+  .title { font-size: 1rem; }
+  .description { font-size: 0.8rem; }
+  .label { font-size: 0.65rem; }
+}

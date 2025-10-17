@@ -1,0 +1,22 @@
+{
+  "name": "react-demo-projects",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "pnpm --filter @showcase/app dev",
+    "build": "pnpm --filter @showcase/app build",
+    "dev:counter": "pnpm --filter @projects/counter dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  },
+  "keywords": [],
+  "author": "asweetcakee",
+  "license": "ISC",
+  "packageManager": "pnpm@10.18.3",
+  "dependencies": {
+    "@fontsource/lato": "^5.2.7",
+    "@fontsource/montserrat": "^5.2.8"
+  }
+}

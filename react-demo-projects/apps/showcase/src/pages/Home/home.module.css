@@ -1,0 +1,41 @@
+@import '../../../../../packages/ui-theme/vars.css';
+
+.home {
+  width: 100%;
+  min-height: 100vh;
+  background-image: var(--gradient); 
+  background-size: 400%;
+  animation: bg-animation 20s infinite alternate; 
+}
+
+@keyframes bg-animation {
+  0% { background-position: left; }
+  100% { background-position: right; }
+}
+
+.page {
+  max-width: 1800px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 1.5rem 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* REQUIRED by react-masonry-css */
+.masonryGrid {
+  display: flex;
+  margin-left: -1rem;
+  width: 100%;
+}
+
+.masonryColumn {
+  padding-left: 1rem;
+  background-clip: padding-box;
+}
+
+.masonryColumn > * {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
