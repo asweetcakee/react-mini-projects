@@ -42,14 +42,4 @@
   );
   --gradient-fade-left: linear-gradient(to left, transparent, var(--color-bg-1));
   --gradient-fade-right: linear-gradient(to right, transparent, var(--color-bg-1));
-
-  
-
-  /* Fonts */
-  --font-montserrat: 'Montserrat';
-  --font-lato: 'Lato';
-}
-
-:root {
-  font-size: 16px;
 }

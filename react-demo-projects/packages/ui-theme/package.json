@@ -1,9 +1,15 @@
 {
   "name": "@ui/ui-theme",
   "version": "1.0.0",
+  "private": true,
   "main": "index.css",
-  "description": "",
+  "description": "Centralized UI theme for React demo projects (fonts, colors, vars)",
+  "type": "module",
   "author": "asweetcakee",
   "license": "ISC",
-  "packageManager": "pnpm@10.18.3"
+  "packageManager": "pnpm@10.18.3",
+  "dependencies": {
+    "@fontsource/lato": "^5.2.7",
+    "@fontsource/montserrat": "^5.2.8"
+  }
 }
