@@ -1,6 +1,6 @@
-import { Routes, Route } from "react-router-dom"
-import Home from "../pages/Home/Home"
-import ProjectPage from "../pages/ProjectPage/ProjectPage"
+import { Routes, Route } from 'react-router-dom'
+import Home from '../pages/Home/Home'
+import ProjectPage from '../pages/ProjectPage/ProjectPage'
 
 const AppRoutes = () => (
   <Routes>

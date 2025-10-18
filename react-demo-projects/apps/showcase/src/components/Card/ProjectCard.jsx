@@ -1,6 +1,6 @@
-import { useState } from "react"
-import { projectTypes } from "../../showcaseConfig"
-import { Link } from "react-router-dom"
+import { useState } from 'react'
+import { projectTypes } from '../../showcaseConfig'
+import { Link } from 'react-router-dom'
 import styles from './projectcard.module.css'
 
 const ProjectCard = ({ project }) => {
@@ -28,7 +28,7 @@ const ProjectCard = ({ project }) => {
           </div>
         </div>
       </div>
-      
+
       {/* Inline demo project */}
       {showPreview && (
         <div className={styles['demo-wrapper']}>

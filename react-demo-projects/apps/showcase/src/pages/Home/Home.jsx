@@ -1,6 +1,6 @@
 import Masonry from 'react-masonry-css'
-import ProjectCard from "../../components/Card/ProjectCard"
-import { projects } from "../../showcaseConfig"
+import ProjectCard from '../../components/Card/ProjectCard'
+import { projects } from '../../showcaseConfig'
 import styles from './home.module.css'
 
 const Home = () => {

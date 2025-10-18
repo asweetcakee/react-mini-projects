@@ -14,7 +14,7 @@ export const projects = [
     features: ['useState', 'useRef', 'event handling', 'setInterval', 'clearInterval'],
     type: projectTypes.small,
     component: Counter,
-  }, 
+  },
   {
     id: 'counter',
     title: 'Counter',

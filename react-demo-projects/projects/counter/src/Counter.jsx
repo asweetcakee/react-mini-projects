@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react'
-import fullStyles from './counter.module.css';
+import fullStyles from './counter.module.css'
 import embeddedStyles from './counter.embedded.module.css'
 
 const Counter = ({ embedded = false }) => {

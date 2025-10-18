@@ -1,8 +1,8 @@
-import { NavLink } from "react-router-dom"
+import { NavLink } from 'react-router-dom'
 import styles from './navigation.module.css'
 
 const Navigation = ({ title, prevProjectId, nextProjectId }) => {
- 
+
   return (
     <nav className={styles.navbar}>
       <div className={styles.container}>
